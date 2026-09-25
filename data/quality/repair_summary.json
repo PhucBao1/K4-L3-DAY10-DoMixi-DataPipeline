@@ -1,0 +1,7 @@
+{
+  "note": "Repair rebuilds the clean dataset from the immutable raw snapshot; running it twice yields identical data.",
+  "trigger": "quality gate failed, freshness SLA violated",
+  "idempotent_two_runs_identical": true,
+  "repaired_matches_baseline_content": true,
+  "repaired_rows": 24
+}

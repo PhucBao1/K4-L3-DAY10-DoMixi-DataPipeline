@@ -1,0 +1,105 @@
+{
+  "report_name": "corrupted",
+  "generated_at": "2026-09-25T10:09:27.648822+00:00",
+  "gx_version": "1.18.0",
+  "success": false,
+  "row_count": 23,
+  "evaluated_expectations": 8,
+  "successful_expectations": 4,
+  "failed_expectations": [
+    "expect_column_values_to_be_unique(paper_id)",
+    "expect_column_value_lengths_to_be_between(title)",
+    "expect_column_value_lengths_to_be_between(summary)",
+    "expect_column_values_to_be_between(age_days)"
+  ],
+  "checks": [
+    {
+      "expectation": "expect_table_row_count_to_be_between",
+      "column": null,
+      "success": true,
+      "observed_value": 23
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "paper_id",
+      "success": true,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_be_unique",
+      "column": "paper_id",
+      "success": false,
+      "unexpected_count": 8,
+      "unexpected_percent": 34.78260869565217,
+      "partial_unexpected_list": [
+        "10.1145/3637528.3671821",
+        "10.1145/3637528.3671819",
+        "10.1145/3637528.3671813",
+        "10.1145/3637528.3671809",
+        "10.1145/3637528.3671821",
+        "10.1145/3637528.3671819",
+        "10.1145/3637528.3671813",
+        "10.1145/3637528.3671809"
+      ]
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "title",
+      "success": true,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "title",
+      "success": false,
+      "unexpected_count": 5,
+      "unexpected_percent": 21.73913043478261,
+      "partial_unexpected_list": [
+        "Advance",
+        "Advance",
+        "Evaluat",
+        "Advance",
+        "Advance"
+      ]
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "text_for_embedding",
+      "success": true,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "summary",
+      "success": false,
+      "unexpected_count": 3,
+      "unexpected_percent": 13.043478260869565,
+      "partial_unexpected_list": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "expectation": "expect_column_values_to_be_between",
+      "column": "age_days",
+      "success": false,
+      "unexpected_count": 6,
+      "unexpected_percent": 26.08695652173913,
+      "partial_unexpected_list": [
+        470,
+        472,
+        474,
+        480,
+        511,
+        181
+      ]
+    }
+  ]
+}
