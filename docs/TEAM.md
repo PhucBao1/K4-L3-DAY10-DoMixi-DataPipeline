@@ -10,9 +10,9 @@
 
 | STT | Họ và tên | MSSV | Email | Vai trò & Phân công công việc | Báo cáo cá nhân |
 |---:|---|---|---|---|---|
-| 1 | | | | Trưởng nhóm / Ingestion & Pipeline Integrator (`core/`, `crossref.py`, `phase1.py`, `corruption_flow.py`) | `report/<MSSV1>_HoTen.md` |
-| 2 | | | | Data Transformation, Corruption & RAG Index (`cleaning.py`, `corruption.py`, `retrieval/`, ChromaDB) | `report/<MSSV2>_HoTen.md` |
-| 3 | | | | Observability & Evaluation (`quality.py` GX 1.x, `testset.py`, `reporting.py`) | `report/<MSSV3>_HoTen.md` |
+| 1 | Nguyễn Phúc Bảo | 2A202602925| pbao2910@gmail.com | Trưởng nhóm / Ingestion & Pipeline Integrator (`core/`, `crossref.py`, `phase1.py`, `corruption_flow.py`) | `report/2A202602925_NguyenPhucBao.md` |
+| 2 | Đào Thanh Trường| 2A202602683 | truong2004ko@gmail.com | Data Transformation, Corruption & RAG Index (`cleaning.py`, `corruption.py`, `retrieval/`, ChromaDB) | `report/2A202602683_DaoThanhTruong.md` |
+| 3 | Nguyễn Ngọc Bảo | 2A202602951 | baboaz132@gmail.com | Observability & Evaluation (`quality.py` GX 1.x, `testset.py`, `reporting.py`) | `report/2A202602951_NguyenNgocBao.md` |
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## # Cá nhân
 
-### ## HoVaTen1-MSSV1
+### ## Nguyễn Phúc Bảo- 2A202602925
 - **Vai trò:** Trưởng nhóm, Ingestion & Điều phối Pipeline.
 - **Công việc chi tiết đã hoàn thành:**
   - Khởi tạo repo nhóm, quản lý cấu hình `core/config.py`, `core/utils.py` và `.env`.
@@ -43,7 +43,7 @@
 - **Điều học được / Đóng góp chính:**
   - Thiết kế Idempotent Pipeline, bảo toàn raw snapshot (Data Lineage) và quản lý trạng thái luồng dữ liệu đa tầng.
 
-### ## HoVaTen2-MSSV2
+### ## Đào Thanh Trường - 2A202602683
 - **Vai trò:** Phụ trách Làm sạch dữ liệu, Tiêm lỗi & RAG Vector Index.
 - **Công việc chi tiết đã hoàn thành:**
   - Chuẩn hóa schema, khử trùng lặp, tính `age_days` và `text_for_embedding` trong `src/ingestion/cleaning.py`.
@@ -52,7 +52,7 @@
 - **Điều học được / Đóng góp chính:**
   - Ảnh hưởng của từng dạng lỗi dữ liệu lên chất lượng retrieval và cách cô lập không gian vector để so sánh khách quan.
 
-### ## HoVaTen3-MSSV3
+### ## Nguyễn Ngọc Bảo - 2A202602951
 - **Vai trò:** Phụ trách Data Observability & Benchmark Evaluation.
 - **Công việc chi tiết đã hoàn thành:**
   - Thiết lập Quality Gate theo chuẩn **Great Expectations 1.x** và giám sát Freshness SLA trong `src/observability/quality.py`.
